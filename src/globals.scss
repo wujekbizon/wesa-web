@@ -1,0 +1,73 @@
+// Custom CSS Rules
+.section_wrapper {
+  height: 100vh;
+  padding: 4rem;
+}
+
+// Colors
+$primary100: #adff2f;
+$primary200: #7fff00;
+$primary300: #00ff00;
+$primary500: #32cd32;
+$primary600: #2d962d;
+$primary700: #1e8c1e;
+
+// Media query
+
+$widthSmWideScreen: 1570px;
+$widthXLgTablet: 1360px;
+$widthLgTablet: 1180px;
+$widthTablet: 960px;
+$widthlgMobile: 778px;
+$widthMobile: 640px;
+$widthsmMobile: 450px;
+
+@mixin smallWideScreen {
+  @media (max-width: #{$widthSmWideScreen}) {
+    @content;
+  }
+}
+
+@mixin xLgTablet {
+  @media (max-width: #{$widthXLgTablet}) {
+    @content;
+  }
+}
+
+@mixin lgTablet {
+  @media (max-width: #{$widthLgTablet}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$widthTablet}) {
+    @content;
+  }
+}
+
+@mixin lgMobile {
+  @media (max-width: #{$widthlgMobile}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$widthMobile}) {
+    @content;
+  }
+}
+
+@mixin smMobile {
+  @media (max-width: #{$widthsmMobile}) {
+    @content;
+  }
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(70, 70, 70, 0.12);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

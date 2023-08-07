@@ -1,0 +1,9 @@
+.home {
+  .rectangle {
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+    background: hsl(202deg 92% 90%) 50%;
+    filter: blur(85px);
+  }
+}

@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <section className="home">
       <Hero />
-      <div className="rectangle" />
       <Explore />
     </section>
   )

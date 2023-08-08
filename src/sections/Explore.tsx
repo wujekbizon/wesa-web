@@ -1,11 +1,12 @@
 import './Explore.scss'
-
-import { Slider } from '../components'
+import { Clients, Carousel } from '../components'
 
 const Explore = () => {
   return (
     <section className="explore" id="explore">
-      <Slider />
+      <div className="rectangle" />
+      <Carousel />
+      <Clients />
     </section>
   )
 }

@@ -1,0 +1,48 @@
+.myswiper {
+  width: 100%;
+  height: 60vh;
+  padding-top: 100px;
+  margin-bottom: 80px;
+
+  .myswiper-slider {
+    width: 817.844px;
+    height: 460.349px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 42px;
+    padding: 80px;
+
+    .swiper-content {
+      display: none;
+      opacity: 0;
+      padding-bottom: 0.625rem;
+    }
+
+    p {
+      padding-right: 80px;
+      text-align: left;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.14px;
+    }
+
+    .btn-wrapper {
+      height: 34px;
+    }
+  }
+  .swiper-slide-active .swiper-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 1;
+    border-radius: 42px;
+  }
+
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background-color: #7fff00;
+  }
+}

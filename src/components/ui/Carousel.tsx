@@ -2,7 +2,7 @@ import './Carousel.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectCoverflow, Autoplay } from 'swiper/modules'
 import { sliderItems } from '../../data/sliderItems'
-import { TitleButton } from '..'
+import { TitleButton, ExploreLink } from '..'
 
 const Carousel = () => {
   return (
@@ -21,10 +21,10 @@ const Carousel = () => {
       }}
       loop={true}
       pagination={{ clickable: true }}
-      // autoplay={{
-      //   delay: 5000,
-      //   disableOnInteraction: false,
-      // }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
       breakpoints={{
         640: {
           slidesPerView: 2,
@@ -51,6 +51,7 @@ const Carousel = () => {
             </div>
             <h2>{item.title}</h2>
             <p>{item.content}</p>
+            <ExploreLink text="Explore More" url="/solutions" />
           </div>
         </SwiperSlide>
       ))}

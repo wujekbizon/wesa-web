@@ -5,5 +5,6 @@ import Title from './ui/Title'
 import TitleButton from './ui/TitleButton'
 import Clients from './Clients'
 import Carousel from './ui/Carousel'
+import ExploreLink from './ui/ExploreLink'
 
-export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel }
+export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel, ExploreLink }

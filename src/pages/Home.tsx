@@ -1,5 +1,5 @@
 import './Home.scss'
-import { Hero, Explore, Technology } from '../sections'
+import { Hero, Explore, Technology, Testimonials } from '../sections'
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Hero />
       <Explore />
       <Technology />
+      <Testimonials />
     </section>
   )
 }

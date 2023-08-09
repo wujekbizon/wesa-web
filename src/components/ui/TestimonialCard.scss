@@ -1,0 +1,50 @@
+@import '../../globals.scss';
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 207px;
+  height: 268px;
+  border-radius: 10px;
+  background: $dark600;
+  padding: 20px 25px;
+
+  p {
+    color: #9ba2b2;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.14px;
+  }
+
+  .testimonial-dev {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 23.4px; /* 146.25% */
+      letter-spacing: -0.14px;
+    }
+  }
+
+  .stars {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

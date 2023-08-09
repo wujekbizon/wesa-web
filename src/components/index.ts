@@ -7,5 +7,6 @@ import Clients from './Clients'
 import Carousel from './ui/Carousel'
 import ExploreLink from './ui/ExploreLink'
 import Card from './ui/Card'
+import TestimonialCard from './ui/TestimonialCard'
 
-export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel, ExploreLink, Card }
+export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel, ExploreLink, Card, TestimonialCard }

@@ -1,14 +1,1 @@
-@import '../globals.scss';
 
-.custom-card {
-  flex-direction: row-reverse;
-  gap: 80px;
-
-  @include Laptop {
-    gap: 50px;
-  }
-
-  @include lgMobile {
-    flex-direction: column;
-  }
-}

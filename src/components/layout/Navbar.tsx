@@ -16,11 +16,12 @@ const Navbar = () => {
   const [scrolledFar, setScrolledFar] = useState(false)
   const [toggle, setToggle] = useState(false)
 
+  const mobileLinks = [{ label: 'Home', url: '/' }, ...links]
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
-      console.log(scrollTop)
-      if (scrollTop > 200 && scrollTop < 1000) {
+      if (scrollTop > 10 && scrollTop < 1000) {
         setScrolled(true)
       } else {
         setScrolled(false)
@@ -44,7 +45,7 @@ const Navbar = () => {
     >
       <div className="navbar_gradient gradient_01" />
       <nav className="navbar">
-        <Logo />
+        <Logo className="custom-logo" />
         <ul className="links">
           {links.map(({ label, url }) => (
             <NavLink
@@ -66,7 +67,7 @@ const Navbar = () => {
 
           <div className={!toggle ? 'hidden' : 'show'}>
             <ul className="menu_list">
-              {links.map(({ label, url }) => (
+              {mobileLinks.map(({ label, url }) => (
                 <NavLink
                   to={url}
                   onClick={() => {

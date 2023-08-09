@@ -13,11 +13,11 @@ const Carousel = () => {
       grabCursor={true}
       centeredSlides={true}
       coverflowEffect={{
-        rotate: 0,
+        rotate: 5,
         stretch: 0,
         depth: 100,
         modifier: 3,
-        slideShadows: true,
+        slideShadows: false,
       }}
       loop={true}
       pagination={{ clickable: true }}
@@ -46,9 +46,8 @@ const Carousel = () => {
       {sliderItems.map((item) => (
         <SwiperSlide style={{ backgroundImage: `url(${item.img})` }} className="myswiper-slider" key={item.id}>
           <div className="swiper-content">
-            <div className="btn-wrapper">
-              <TitleButton title="Product Update" />
-            </div>
+            <TitleButton title="Product Update" />
+
             <h2>{item.title}</h2>
             <p>{item.content}</p>
             <ExploreLink text="Explore More" url="/solutions" />

@@ -10,16 +10,24 @@
     background-size: cover;
     background-position: center;
     border-radius: 42px;
-    padding: 80px;
 
     .swiper-content {
       display: none;
       opacity: 0;
-      padding-bottom: 0.625rem;
+      padding: 60px;
+    }
+
+    h2 {
+      color: white;
+      font-size: 29px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: -0.14px;
     }
 
     p {
-      padding-right: 80px;
+      width: 60%;
       text-align: left;
       color: #fff;
       font-size: 15px;
@@ -27,18 +35,23 @@
       line-height: 24px;
       letter-spacing: -0.14px;
     }
-
-    .btn-wrapper {
-      height: 34px;
-    }
   }
+
   .swiper-slide-active .swiper-content {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 42px;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    background: hsl(202, 92%, 90%) 50%;
+    filter: blur(3px) brightness(100%) drop-shadow(0 0 3.5em hsl(202, 92%, 100%));
+    background-size: cover;
   }
 
   .swiper-pagination-bullet,

@@ -129,15 +129,15 @@
 
       .menu_list {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         flex: 1 1 0%;
-        gap: 16px;
+        gap: 25px;
         transition: all 0.3s ease-in-out;
 
         .link_btn {
-          color: #fa6400;
+          color: white;
           font-weight: 500;
           font-size: 35px;
         }
@@ -151,12 +151,27 @@
 }
 
 .scrolled {
-  background-color: #040c18;
-  transition: all 0.5s ease-in-out;
+  background-color: $dark600;
+  transition: all 0.3s ease-in-out;
 }
 
 .scrolled-far {
-  background-color: hsl(202deg 92% 90%) 50%;
+  background-color: $secondary300;
   height: 70px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-far .blog-btn {
+  button {
+    background-color: $dark600 !important;
+    color: $secondary300 !important;
+  }
+}
+
+.scrolled-far .custom-logo {
+  border-color: $dark600;
+
+  h1 {
+    color: $dark600;
+  }
 }

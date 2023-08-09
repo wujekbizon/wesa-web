@@ -1,5 +1,5 @@
 import './Clients.scss'
-import { Title } from '.'
+import { Title, ExploreLink } from '.'
 
 import { svgFiles } from '../data/svgElements'
 
@@ -12,6 +12,8 @@ const Clients = () => {
     <div className="clients">
       <Title title="Our Clients" />
       <div className="svgs-container">{svgElements}</div>
+
+      <ExploreLink text="View customere stories" url="/customers" className="custom" />
     </div>
   )
 }

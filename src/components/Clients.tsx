@@ -1,5 +1,5 @@
 import './Clients.scss'
-import { Title, ExploreLink } from '.'
+import { Title, ExploreLink, TitleButton } from '.'
 
 import { svgFiles } from '../data/svgElements'
 
@@ -10,9 +10,9 @@ const svgElements = svgFiles.map(({ svg, width, height }, index) => (
 const Clients = () => {
   return (
     <div className="clients">
+      <TitleButton title="Trusted by the industry leaders" className="wrapper" />
       <Title title="Our Clients" />
       <div className="svgs-container">{svgElements}</div>
-
       <ExploreLink text="View customere stories" url="/customers" className="custom" />
     </div>
   )

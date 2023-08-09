@@ -1,12 +1,6 @@
 import './Title.scss'
-import { TitleButton } from '..'
 
 const Title = ({ title }: { title: string }) => {
-  return (
-    <div className="custom_title-container">
-      <TitleButton title="Trusted by the industry leaders" />
-      <h1>{title}</h1>
-    </div>
-  )
+  return <h1>{title}</h1>
 }
 export default Title

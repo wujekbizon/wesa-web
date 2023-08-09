@@ -29,7 +29,7 @@
     transition: all 0.3s ease-in-out;
 
     @include lgMobile {
-      padding: 20px 24px;
+      padding: 20px 14px;
     }
 
     .links {
@@ -37,6 +37,10 @@
       height: 100%;
       align-items: center;
       gap: 55px;
+
+      @include lgMobile {
+        gap: 20px;
+      }
 
       @include mobile {
         display: none;
@@ -103,8 +107,6 @@
         top: 0;
         right: -250px;
         transition: all 0.7s ease;
-        background: #000000; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #434343, #000000);
       }
 
@@ -116,11 +118,9 @@
         top: 0;
         right: 0;
         z-index: 10;
-        background: #000000; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #434343, #000000);
         transition: all 0.7s ease;
-        opacity: 0.9;
+        opacity: 1;
       }
 
       img {
@@ -153,12 +153,20 @@
 .scrolled {
   background-color: $dark600;
   transition: all 0.3s ease-in-out;
+
+  @include mobile {
+    background-color: transparent;
+  }
 }
 
 .scrolled-far {
   background-color: $secondary300;
   height: 70px;
   transition: all 0.3s ease-in-out;
+
+  @include mobile {
+    background-color: transparent;
+  }
 }
 
 .scrolled-far .blog-btn {
@@ -174,4 +182,12 @@
   h1 {
     color: $dark600;
   }
+}
+
+.scrolled-far .link_btn {
+  color: $textColor !important;
+  font-weight: 700 !important ;
+}
+.scrolled-far .link_btn:hover {
+  color: $dark800 !important;
 }

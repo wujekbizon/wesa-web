@@ -54,6 +54,10 @@
   border: 1px solid $primary200;
   border-radius: 4px;
 
+  @include mobile {
+    display: none;
+  }
+
   h1 {
     color: $primary200;
   }

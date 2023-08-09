@@ -1,19 +1,23 @@
 import './Testimonials.scss'
-import { TestimonialCard } from '../components'
-import Dev from '../images/dev.png'
-
-const developer = {
-  imgSrc: Dev,
-  name: 'Greg Wolf',
-  review:
-    'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
-  rating: 4,
-}
+import { TestimonialCard, TitleButton, Title } from '../components'
+import { reviews } from '../data/links'
 
 const Testimonials = () => {
   return (
     <section className="testimonials">
-      <TestimonialCard {...developer} />
+      <div className="testimonials-title">
+        <TitleButton title="Tell us what to explore" className="wrapper" />
+        <Title title="Testimonials" />
+        <p>
+          Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that
+          helps humans explore their world.
+        </p>
+      </div>
+      <div className="testimonials-cards">
+        {reviews.map((review, index) => (
+          <TestimonialCard {...review} key={`${review.name}-${index}`} />
+        ))}
+      </div>
     </section>
   )
 }

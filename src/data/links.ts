@@ -1,3 +1,5 @@
+import Dev from '../images/dev.png'
+
 export const links = [
   {
     label: 'Solutions',
@@ -10,5 +12,71 @@ export const links = [
   {
     label: 'Customers',
     url: '/customers',
+  },
+]
+
+export const reviews = [
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 5,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 4,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 3,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 3,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 1,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 1,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 5,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 5,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network,',
+    rating: 5,
   },
 ]

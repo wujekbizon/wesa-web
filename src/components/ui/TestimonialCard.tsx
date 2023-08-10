@@ -15,7 +15,7 @@ const TestimonialCard = ({ imgSrc, name, review, rating }: TestimonialCardProps)
         <img src={imgSrc} alt="Developer" />
         <h2>{name}</h2>
       </div>
-      <p>{review.substring(0, 125)}</p>
+      <p>{review.substring(0, 92)}</p>
       <div className="stars">{renderStars(rating)}</div>
     </div>
   )

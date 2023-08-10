@@ -6,8 +6,11 @@
   background-color: rgba(26, 45, 71, 0.3);
   backdrop-filter: blur(20px);
   border-radius: 25px;
-  margin: 28px 50px;
+  margin: 48px 50px;
   padding: 28px 50px 50px 50px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease-in-out;
 
   @include mobile {
     margin: 28px 25px;
@@ -46,10 +49,20 @@
 
   .testimonials-swiper {
     width: 100%;
-    padding-top: 57px;
+    padding: 57px 0;
 
     .testimonials-cards {
       display: flex;
     }
   }
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background-color: #7fff00;
+}
+
+.show-testimonials {
+  opacity: 1;
+  transform: translateX(0);
 }

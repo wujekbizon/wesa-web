@@ -47,7 +47,6 @@ const Carousel = () => {
         <SwiperSlide style={{ backgroundImage: `url(${item.img})` }} className="myswiper-slider" key={item.id}>
           <div className="swiper-content">
             <TitleButton title="Product Update" />
-
             <h2>{item.title}</h2>
             <p>{item.content}</p>
             <ExploreLink text="Explore More" url="/solutions" />

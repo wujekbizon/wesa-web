@@ -79,4 +79,25 @@ export const reviews = [
       'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network, developers',
     rating: 5,
   },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network, developers',
+    rating: 5,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network, developers',
+    rating: 5,
+  },
+  {
+    imgSrc: Dev,
+    name: 'Greg Wolf',
+    review:
+      'Global community is proof that you can be a successful freelancer no matter where you live. Collaborate, network, developers',
+    rating: 5,
+  },
 ]

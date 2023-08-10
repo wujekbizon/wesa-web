@@ -1,12 +1,15 @@
 import './Testimonials.scss'
+import { useInView } from 'react-intersection-observer'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, EffectCoverflow, Autoplay } from 'swiper/modules'
+import { Pagination, Autoplay } from 'swiper/modules'
 import { TestimonialCard, TitleButton, Title } from '../components'
 import { reviews } from '../data/links'
 
 const Testimonials = () => {
+  const { ref, inView } = useInView()
+
   return (
-    <section className="testimonials">
+    <section className={`testimonials ${inView ? 'show-testimonials' : ''}`} ref={ref}>
       <div className="testimonials-title">
         <TitleButton title="Tell us what to explore" className="wrapper" />
         <Title title="Testimonials" />
@@ -18,8 +21,13 @@ const Testimonials = () => {
 
       <Swiper
         className="testimonials-swiper"
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         grabCursor={true}
+        pagination={{ clickable: true, dynamicBullets: true, dynamicMainBullets: 2 }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           450: { slidesPerView: 1, spaceBetween: 20 },
           640: {
@@ -34,9 +42,15 @@ const Testimonials = () => {
           },
           1440: {
             slidesPerView: 5.2,
+            spaceBetween: 30,
           },
-          1960: {
-            slidesPerView: 10,
+          1920: {
+            slidesPerView: 7.5,
+            spaceBetween: 30,
+          },
+          2560: {
+            slidesPerView: 9.5,
+            spaceBetween: 30,
           },
         }}
       >

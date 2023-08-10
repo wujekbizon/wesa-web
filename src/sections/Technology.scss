@@ -1,14 +1,25 @@
 @import '../globals.scss';
 
-.custom-card {
-  flex-direction: row-reverse;
-  gap: 80px;
+.technology {
+  background-image: url('../images/vector.png');
+  background-size: contain;
+  background-position: left 50% top 250px;
+  background-repeat: no-repeat;
 
   @include Laptop {
-    gap: 50px;
+    background-image: none;
   }
 
-  @include lgMobile {
-    flex-direction: column;
+  .custom-card {
+    flex-direction: row-reverse;
+    gap: 80px;
+
+    @include Laptop {
+      gap: 50px;
+    }
+
+    @include lgMobile {
+      flex-direction: column;
+    }
   }
 }

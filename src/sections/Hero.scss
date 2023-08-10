@@ -18,7 +18,12 @@
   }
 
   .hero-title {
-    h1 {
+    width: 100%;
+    position: fixed;
+    top: center;
+    left: 50%;
+
+    .title {
       font-size: 73px;
       font-weight: 700;
       line-height: 92px;
@@ -32,6 +37,16 @@
       @include smMobile {
         line-height: 45px;
         font-size: 30px;
+        display: none;
+      }
+    }
+
+    .mobile-title {
+      display: none;
+      @include smMobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 

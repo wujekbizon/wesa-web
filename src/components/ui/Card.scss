@@ -6,8 +6,11 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 53px;
-  gap: 80px;
+  padding: 56px;
+  gap: 100px;
+  opacity: 0;
+  // transform: scale(0); // for zoom animation
+  transition: all 0.8s ease-in-out;
 
   @include Laptop {
     gap: 50px;
@@ -67,4 +70,9 @@
       border-radius: 25px;
     }
   }
+}
+
+.show {
+  opacity: 1;
+  // transform: scale(1); // for zoom animation
 }

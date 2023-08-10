@@ -1,4 +1,6 @@
 import './Testimonials.scss'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, EffectCoverflow, Autoplay } from 'swiper/modules'
 import { TestimonialCard, TitleButton, Title } from '../components'
 import { reviews } from '../data/links'
 
@@ -13,11 +15,37 @@ const Testimonials = () => {
           helps humans explore their world.
         </p>
       </div>
-      <div className="testimonials-cards">
+
+      <Swiper
+        className="testimonials-swiper"
+        modules={[Pagination]}
+        grabCursor={true}
+        breakpoints={{
+          450: { slidesPerView: 1, spaceBetween: 20 },
+          640: {
+            slidesPerView: 2.2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2.5,
+          },
+          1024: {
+            slidesPerView: 3.5,
+          },
+          1440: {
+            slidesPerView: 5.2,
+          },
+          1960: {
+            slidesPerView: 10,
+          },
+        }}
+      >
         {reviews.map((review, index) => (
-          <TestimonialCard {...review} key={`${review.name}-${index}`} />
+          <SwiperSlide className="testimonials-cards" key={`${review.name}-${index}`}>
+            <TestimonialCard {...review} />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   )
 }

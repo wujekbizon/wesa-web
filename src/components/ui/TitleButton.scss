@@ -11,11 +11,20 @@
   padding: 4px 20px;
   box-shadow: 0px 2px 4px rgba(127, 255, 0, 0.5);
 
+  @include smMobile {
+    height: 20px;
+    padding: 2px 15px;
+  }
+
   h4 {
     color: $lightColor;
     font-size: 11px;
     font-weight: 400;
     letter-spacing: 0.3px;
     margin-left: 8.5px;
+
+    @include smMobile {
+      font-size: 9px;
+    }
   }
 }

@@ -1,13 +1,21 @@
+@import '../globals.scss';
+
 .testimonials {
-  height: 70vh;
   display: flex;
   flex-direction: column;
   background-color: rgba(26, 45, 71, 0.3);
   backdrop-filter: blur(20px);
   border-radius: 25px;
   margin: 28px 50px;
-  padding-left: 100px;
-  padding-top: 28px;
+  padding: 28px 50px 50px 50px;
+
+  @include mobile {
+    margin: 28px 25px;
+  }
+
+  @include smMobile {
+    padding: 15px;
+  }
 
   .testimonials-title {
     display: flex;
@@ -24,17 +32,24 @@
       font-weight: 400;
       line-height: 32px; /* 160% */
       letter-spacing: -0.14px;
+
+      @include Laptop {
+        width: 60%;
+      }
+
+      @include lgMobile {
+        width: 100%;
+        font-size: 16px;
+      }
     }
   }
 
-  .testimonials-cards {
+  .testimonials-swiper {
     width: 100%;
-    overflow: visible;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: 20px;
     padding-top: 57px;
+
+    .testimonials-cards {
+      display: flex;
+    }
   }
 }

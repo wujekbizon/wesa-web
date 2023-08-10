@@ -9,4 +9,8 @@ h1 {
   @include lgMobile {
     font-size: 55px;
   }
+
+  @include smMobile {
+    font-size: 40px;
+  }
 }

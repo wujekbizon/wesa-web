@@ -1,0 +1,9 @@
+.home {
+  .animations-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    overflow-x: clip;
+    background: radial-gradient(circle at 3% 25%, #011627 0%, #040c18 100%);
+  }
+}

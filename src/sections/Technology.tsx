@@ -1,11 +1,17 @@
 import './Technology.scss'
+import { useRef } from 'react'
 import { DESIGN, NAVIGATION, ATLAS, DATA, MAPS, SEARCH, STUDIO, VISION } from '../data/cards'
 import { Card } from '../components'
 import { Testimonials } from '.'
 
+import { useDebouncedMouseMove } from '../hooks/useDebouncedMouseMove'
+
 const Technology = () => {
+  const animationRef = useRef<HTMLDivElement | null>(null)
+  useDebouncedMouseMove(animationRef, 5)
+
   return (
-    <section className="technology">
+    <section className="technology" ref={animationRef}>
       <Card {...DESIGN} />
       <Card {...NAVIGATION} className="custom-card" />
       <Card {...STUDIO} />

@@ -1,10 +1,16 @@
 @import '../globals.scss';
 
 .technology {
-  background-image: url('../images/vector.png');
-  background-size: contain;
-  background-position: left 50% top 250px;
-  background-repeat: no-repeat;
+  width: 100%;
+  // background-image: url('../images/vector.png');
+  // background-size: contain;
+  // background-position: left 50% top 250px;
+  // background-repeat: no-repeat;
+  background: radial-gradient(
+    circle farthest-side at var(--x, 100px) var(--y, 100px),
+    hsl(90, 100%, 40%) 0.1%,
+    transparent 1.5%
+  );
 
   @include Laptop {
     background-image: none;

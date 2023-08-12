@@ -13,6 +13,9 @@ const Hero = () => {
 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
   const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8])
+  const position = useTransform(scrollYProgress, (pos) => {
+    return pos === 1 ? 'relative' : 'fixed'
+  })
 
   return (
     <motion.section
@@ -24,7 +27,7 @@ const Hero = () => {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
     >
-      <motion.div style={{ scale, x: '-50%' }} className="hero-title">
+      <motion.div style={{ scale, x: '-50%', position }} className="hero-title">
         <motion.h1 variants={zoomIn(0.5, 0.8)} className="title">
           <span>W</span>
           olfinger <span>E</span>nterprise <span>S</span>olutions <span>A</span>rchitects

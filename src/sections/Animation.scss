@@ -1,6 +1,76 @@
-.animation {
+@import '../globals.scss';
+
+.animation-section {
   position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow-x: clip;
+  z-index: 10;
+  height: 300vh;
+  background: radial-gradient(
+    circle farthest-side at var(--x, 100px) var(--y, 100px),
+    $primary200 1%,
+    transparent 100%
+  );
+
+  .title {
+    font-size: 80px;
+    text-transform: uppercase;
+    transform: rotate(10deg) translateX(calc(var(--x) / 10 - 0px));
+  }
+
+  .animation-container {
+    position: relative;
+    width: 100%;
+    height: 300vh;
+
+    .boxes-container {
+      position: sticky;
+      top: 10vh;
+      display: flex;
+      align-items: center;
+
+      .box1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 350px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 15px 5px rgba(70, 70, 70, 1);
+
+        .box1-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+
+      .box1-content {
+        width: 500px;
+
+        h1 {
+          width: 100%;
+          line-height: 28px;
+          font-size: 20px;
+          font-family: 'Roboto Condensed';
+          text-align: left;
+          color: $dark800;
+          margin-top: 45px;
+        }
+      }
+
+      .box2-avatars {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        .box2-avatar {
+          height: 120px;
+          width: 120px;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }

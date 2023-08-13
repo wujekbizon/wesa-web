@@ -12,6 +12,10 @@
   transform: translateX(100%);
   transition: all 0.8s ease-in-out;
 
+  @include lgMobile {
+    margin: 48px 25px;
+  }
+
   @include mobile {
     margin: 28px 25px;
   }

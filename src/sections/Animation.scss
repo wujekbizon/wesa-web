@@ -6,8 +6,8 @@
   height: 300vh;
   background: radial-gradient(
     circle farthest-side at var(--x, 100px) var(--y, 100px),
-    $primary200 1%,
-    transparent 100%
+    $secondary200 0.1%,
+    transparent 1.5%
   );
 
   .title {
@@ -26,6 +26,7 @@
       top: 10vh;
       display: flex;
       align-items: center;
+      z-index: 2;
 
       .box1 {
         position: relative;
@@ -35,7 +36,7 @@
         width: 600px;
         height: 350px;
         border-radius: 15px;
-        box-shadow: 5px 5px 15px 5px rgba(70, 70, 70, 1);
+        box-shadow: 2px 2px 10px 2px $secondary200;
 
         .box1-image {
           width: 100%;
@@ -51,20 +52,18 @@
         h1 {
           width: 100%;
           line-height: 28px;
-          font-size: 20px;
-          font-family: 'Roboto Condensed';
+          font-size: 18px;
+          font-family: 'Open Sans';
           text-align: left;
-          color: $dark800;
-          margin-top: 45px;
         }
       }
 
-      .box2-avatars {
+      .box3-avatars {
         display: flex;
         flex-direction: column;
         gap: 45px;
 
-        .box2-avatar {
+        .box3-avatar {
           height: 120px;
           width: 120px;
           border-radius: 5px;

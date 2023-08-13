@@ -8,5 +8,6 @@ import Carousel from './ui/Carousel'
 import ExploreLink from './ui/ExploreLink'
 import Card from './ui/Card'
 import TestimonialCard from './ui/TestimonialCard'
+import Button from './ui/Button'
 
-export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel, ExploreLink, Card, TestimonialCard }
+export { Logo, Navbar, ScrollButton, Title, TitleButton, Clients, Carousel, ExploreLink, Card, TestimonialCard, Button }

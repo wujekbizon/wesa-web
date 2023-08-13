@@ -1,0 +1,79 @@
+@import '../globals.scss';
+
+.get-started {
+  position: relative;
+  z-index: 10;
+  height: 447px;
+  margin: 56px;
+  padding: 30px 70px;
+  border-radius: 25px;
+  background: $dark700;
+
+  @include Laptop {
+    padding: 30px;
+  }
+
+  @include lgMobile {
+    margin: 50px 25px;
+    padding: 10px;
+  }
+
+  @include smMobile {
+    margin: 25px 0px;
+    border-radius: 0;
+  }
+
+  .get-started-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-image: url('../images//get_started.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+    padding: 30px 0;
+
+    @include smMobile {
+      padding: 10px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      line-height: normal;
+    }
+
+    p {
+      color: #9ba2b2;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 160% */
+      letter-spacing: -0.14px;
+
+      @include lgMobile {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .get-started-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    @include lgMobile {
+      gap: 20px;
+    }
+
+    .custom-btn {
+      background-color: $secondary200;
+    }
+  }
+}

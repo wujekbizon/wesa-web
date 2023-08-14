@@ -101,3 +101,10 @@ export const reviews = [
     rating: 5,
   },
 ]
+
+export const webBullets = [
+  'Latest web technologies like PWA, SPA, React.js, Node.js',
+  'Wallet-friendly engagement models to hire developers',
+  'Daily collaborative meetings with product managers',
+  'Free full-cycle quality assurance',
+]

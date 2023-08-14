@@ -1,6 +1,13 @@
 import './Developers.scss'
 
+// components
+import { WebSolution } from '../sections'
+
 const Developers = () => {
-  return <div>Developers</div>
+  return (
+    <section className="developers">
+      <WebSolution />
+    </section>
+  )
 }
 export default Developers

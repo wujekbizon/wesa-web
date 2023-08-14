@@ -29,8 +29,12 @@
     padding: 10px 64px;
     transition: all 0.3s ease-in-out;
 
+    @include Laptop {
+      padding: 10px 50px;
+    }
+
     @include lgMobile {
-      padding: 20px 14px;
+      padding: 15px 25px;
     }
 
     .links {
@@ -39,7 +43,7 @@
       align-items: center;
       gap: 55px;
 
-      @include lgMobile {
+      @include Laptop {
         gap: 20px;
       }
 
@@ -71,6 +75,14 @@
 
         &:hover {
           opacity: 1;
+        }
+
+        @include Laptop {
+          padding: 0 15px;
+        }
+
+        @include lgMobile {
+          display: none;
         }
       }
     }
@@ -148,6 +160,11 @@
         }
       }
     }
+  }
+}
+.custom-logo {
+  @include mobile {
+    display: none;
   }
 }
 

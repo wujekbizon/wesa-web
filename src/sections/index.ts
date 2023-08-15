@@ -5,5 +5,6 @@ import Testimonials from './Testimonials'
 import Animation from './Animation'
 import GetStarted from './GetStarted'
 import WebSolution from './WebSolution'
+import Developement from './Developement'
 
-export { Hero, Explore, Technology, Testimonials, Animation, GetStarted, WebSolution }
+export { Hero, Explore, Technology, Testimonials, Animation, GetStarted, WebSolution, Developement }

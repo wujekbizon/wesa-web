@@ -13,6 +13,8 @@ import Link from './ui/Link'
 import Footer from './layout/Footer'
 import FooterCard from './ui/FooterCard'
 import Bullet from './ui/Bullet'
+import Line from './ui/Line'
+import ServiceCard from './ui/ServiceCard'
 
 export {
   Logo,
@@ -30,4 +32,6 @@ export {
   Footer,
   FooterCard,
   Bullet,
+  Line,
+  ServiceCard,
 }

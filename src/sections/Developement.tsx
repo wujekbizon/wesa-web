@@ -15,11 +15,12 @@ const Developement = () => {
         </p>
       </div>
       <div className="developement-grid">
+        <div className="gradient-02" />
         {servicesCards.map((card, index) => (
-          <div key={card.id} className="service-card-wrapper">
-            <Line style={{ display: ` ${index % 2 ? 'none' : 'block'}` }} />
+          <div key={card.id} className={`service-card-wrapper card-${index} `}>
+            <Line className={`${index % 2 === 0 ? 'hide-top' : 'show-top'} line-top${index}`} />
             <ServiceCard {...card} />
-            {/* <Line style={{ display: ` ${index % 1 ? 'none' : 'none'}` }} /> */}
+            <Line className={`${index % 2 === 0 ? 'hide-bottom' : 'show-bottom'} line-bottom${index}`} />
           </div>
         ))}
       </div>

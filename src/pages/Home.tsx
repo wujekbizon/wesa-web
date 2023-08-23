@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <section className="home">
       <Hero />
-      <div className="animations-wrapper">{/* <Animation /> */}</div>
+      <div className="animations-wrapper">
+        <Animation />
+      </div>
       <Explore />
       <Technology />
       {/* <Testimonials /> */}

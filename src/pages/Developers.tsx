@@ -1,7 +1,7 @@
 import './Developers.scss'
 
 // components
-import { WebSolution, Developement, Technologies } from '../sections'
+import { WebSolution, Developement, Technologies, ProjectScope } from '../sections'
 
 const Developers = () => {
   return (
@@ -9,6 +9,7 @@ const Developers = () => {
       <WebSolution />
       <Developement />
       <Technologies />
+      <ProjectScope />
     </section>
   )
 }

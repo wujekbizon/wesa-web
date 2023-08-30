@@ -6,14 +6,12 @@ import PureDesign from '../images/pure_design.png'
 import Logo from '../images/schoolLogo.png'
 import Brand from '../images/wolfpad.png'
 import ChatBot from '../images/chatbot.png'
-import GetStarted from '../images/get_started.png'
 
 const Animation = () => {
   const animationRef = useRef<HTMLDivElement | null>(null)
   useDebouncedMouseMove(animationRef, 5)
 
   const targetRef = useRef<HTMLDivElement | null>(null)
-  const extendedRef = useRef<HTMLDivElement | null>(null)
 
   const { scrollYProgress } = useScroll({
     target: targetRef,

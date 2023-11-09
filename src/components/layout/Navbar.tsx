@@ -12,7 +12,7 @@ import CloseSvg from '../../images/close.svg'
 import { Logo } from '..'
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
+  // const [scrolled, setScrolled] = useState(false)
   const [scrolledFar, setScrolledFar] = useState(false)
   const [toggle, setToggle] = useState(false)
 
@@ -41,7 +41,7 @@ const Navbar = () => {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`header ${scrolled ? 'scrolled' : ''} ${scrolledFar ? 'scrolled-far' : ''} `}
+      className={`header  ${scrolledFar ? 'scrolled-far' : ''} `}
     >
       <div className="navbar_gradient gradient_01" />
       <nav className="navbar">

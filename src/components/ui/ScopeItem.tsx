@@ -8,7 +8,7 @@ type ScopeItemProps = {
   desc: string
   mirror: boolean
 }
-const ScopeItem = ({ id, icon, title, desc, mirror }: ScopeItemProps) => {
+const ScopeItem = ({ icon, title, desc, mirror }: ScopeItemProps) => {
   return (
     <div className={`${mirror ? 'right-scope' : 'left-scope'} scope-item`}>
       <div className="icon-circle">{icon}</div>

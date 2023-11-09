@@ -3,7 +3,7 @@
 .animation-section {
   position: relative;
   z-index: 10;
-  height: 300vh;
+  height: 325vh;
   background: radial-gradient(
     circle farthest-side at var(--x, 100px) var(--y, 100px),
     $secondary200 0.1%,
@@ -44,10 +44,19 @@
           object-fit: cover;
           border-radius: 10px;
         }
+
+        .avatar-project {
+          position: absolute;
+          right: 30px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
       }
 
       .box1-content {
         width: 500px;
+        position: relative;
 
         h1 {
           width: 100%;
@@ -60,14 +69,41 @@
 
       .box3-avatars {
         display: flex;
-        flex-direction: column;
         gap: 45px;
 
         .box3-avatar {
           height: 120px;
           width: 120px;
-          border-radius: 5px;
+
           object-fit: cover;
+        }
+      }
+
+      .locker {
+        position: absolute;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        border-radius: 10px;
+        // background: radial-gradient(#7fff00 10%, #040c18 100%);
+        color: #040c18;
+
+        .locker-title {
+          font-size: 45px;
+          text-align: left;
+        }
+
+        p {
+          font-size: 20px;
+        }
+
+        .locker-desc {
+          line-height: 35px;
+          font-size: 20px;
+          font-family: 'Open Sans';
         }
       }
     }

@@ -15,6 +15,7 @@ import FooterCard from './ui/FooterCard'
 import Bullet from './ui/Bullet'
 import Line from './ui/Line'
 import ServiceCard from './ui/ServiceCard'
+import ScopeItem from './ui/ScopeItem'
 
 export {
   Logo,
@@ -34,4 +35,5 @@ export {
   Bullet,
   Line,
   ServiceCard,
+  ScopeItem,
 }

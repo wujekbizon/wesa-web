@@ -1,0 +1,91 @@
+@import '../../globals.scss';
+
+.scope-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  .icon-circle {
+    width: 165px;
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(26, 45, 71, 0.3);
+    border-radius: 50%;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .vertical-line {
+      transform: rotate(90deg);
+      margin-left: 20px;
+      margin-right: 20px;
+
+      @include Laptop {
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .scope-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 632px;
+
+    .scope-title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 18px;
+    }
+
+    .scope-desc {
+      color: #9ba2b2;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 160% */
+      letter-spacing: -0.14px;
+    }
+  }
+}
+
+.right-scope {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  @include lgMobile {
+    justify-content: center;
+    margin-left: 15px;
+    padding-right: 0;
+  }
+
+  @include smMobile {
+    margin-left: 0;
+  }
+}
+
+.left-scope {
+  flex-direction: row;
+  justify-content: flex-start;
+
+  @include lgMobile {
+    justify-content: center;
+    margin-right: 15px;
+    padding-left: 0;
+  }
+
+  @include smMobile {
+    margin-right: 0;
+  }
+}

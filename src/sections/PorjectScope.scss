@@ -1,14 +1,32 @@
 .project-scope {
-  padding: 100px 140px;
+  max-width: 1144px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 100px;
+  gap: 40px;
 
   .project-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    margin-top: 25px;
+  }
+
+  .scope-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .bottom-line-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+    }
   }
 }

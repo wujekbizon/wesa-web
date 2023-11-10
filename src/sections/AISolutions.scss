@@ -1,0 +1,10 @@
+@import '../globals.scss';
+
+.ai-solution {
+  .rectangle {
+    height: 200px;
+    flex-shrink: 0;
+    background: linear-gradient(145.97deg, #011627 0%, #040c18 100%);
+    filter: blur(35px) drop-shadow(0 0 0.5em #040c18);
+  }
+}

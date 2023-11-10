@@ -9,6 +9,8 @@ import Backend from './Backend'
 import Frontend from './Frontend'
 import Manager from './Manager'
 import Engineer from './Engineer'
+import DetectionIcon from './DetectionIcon'
+import LidarIcon from './LidarIcon'
 
 export {
   Supply,
@@ -22,4 +24,6 @@ export {
   Frontend,
   Manager,
   Engineer,
+  DetectionIcon,
+  LidarIcon,
 }

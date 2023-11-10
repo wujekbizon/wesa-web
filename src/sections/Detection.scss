@@ -1,0 +1,104 @@
+@import '../globals.scss';
+
+.detection-ai {
+  display: flex;
+  flex-direction: row;
+  gap: 230px;
+  padding: 64px;
+
+  @include lgTablet {
+    gap: 100px;
+  }
+
+  @include Laptop {
+    padding: 40px;
+    gap: 35px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  @include smMobile {
+    padding: 25px;
+  }
+
+  .detection-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right: 45px;
+    gap: 15px;
+
+    @include lgTablet {
+      padding-right: 0;
+    }
+
+    @include Laptop {
+      align-items: center;
+    }
+
+    h1 {
+      text-align: left;
+
+      @include tablet {
+        line-height: 65px;
+        text-align: center;
+      }
+    }
+
+    .detection-data {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-top: 40px;
+
+      @include mobile {
+        align-items: flex-start;
+      }
+
+      p {
+        color: #b6c4ca;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+
+    .detection-lidar {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      @include mobile {
+        align-items: flex-end;
+      }
+
+      p {
+        color: #b6c4ca;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+
+        @include mobile {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .detection-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

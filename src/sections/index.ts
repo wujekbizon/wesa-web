@@ -8,6 +8,10 @@ import WebSolution from './WebSolution'
 import Developement from './Developement'
 import Technologies from './Technologies'
 import ProjectScope from './ProjectScope'
+import AISolutions from './AISolutions'
+import Geospatial from './Geospatial'
+import Detection from './Detection'
+import Analyze from './Analyze'
 
 export {
   Hero,
@@ -20,4 +24,8 @@ export {
   Developement,
   Technologies,
   ProjectScope,
+  AISolutions,
+  Geospatial,
+  Detection,
+  Analyze,
 }

@@ -1,6 +1,6 @@
 import './Navbar.scss'
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { navVariants } from '../../utils/motion'
 
@@ -12,7 +12,8 @@ import CloseSvg from '../../images/close.svg'
 import { Logo } from '..'
 
 const Navbar = () => {
-  // const [scrolled, setScrolled] = useState(false)
+  const location = useLocation()
+  const [scrolled, setScrolled] = useState(false)
   const [scrolledFar, setScrolledFar] = useState(false)
   const [toggle, setToggle] = useState(false)
 
@@ -21,11 +22,18 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
-      // if (scrollTop > 10 && scrollTop < 4650) {
-      //   setScrolled(true)
-      // } else {
-      //   setScrolled(false)
-      // }
+      if (
+        (location.pathname == '/solutions' ||
+          location.pathname == '/developers' ||
+          location.pathname == '/customers') &&
+        scrollTop > 10 &&
+        scrollTop < 4650
+      ) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+
       if (scrollTop > 4600) {
         setScrolledFar(true)
       } else {
@@ -34,14 +42,14 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [location])
 
   return (
     <motion.header
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className={`header  ${scrolledFar ? 'scrolled-far' : ''} `}
+      className={`header ${scrolled ? 'scrolled' : ''}  ${scrolledFar ? 'scrolled-far' : ''} `}
     >
       <div className="navbar_gradient gradient_01" />
       <nav className="navbar">

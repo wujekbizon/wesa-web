@@ -13,6 +13,7 @@ import Geospatial from './Geospatial'
 import Detection from './Detection'
 import Analyze from './Analyze'
 import Intelligence from './Intelligence'
+import Partners from './Partners'
 
 export {
   Hero,
@@ -30,4 +31,5 @@ export {
   Detection,
   Analyze,
   Intelligence,
+  Partners,
 }

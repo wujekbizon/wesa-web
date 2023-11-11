@@ -1,6 +1,11 @@
 import './Customers.scss'
+import { Partners } from '../sections'
 
 const Customers = () => {
-  return <div>Customers</div>
+  return (
+    <section className="customers">
+      <Partners />
+    </section>
+  )
 }
 export default Customers

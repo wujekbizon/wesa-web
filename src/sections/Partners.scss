@@ -1,0 +1,146 @@
+@import '../globals.scss';
+
+.partners {
+  background-image: url('../images/fullGlobe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  margin-top: 100px;
+
+  @include Laptop {
+    background-size: 200%;
+  }
+
+  @include mobile {
+    gap: 80px;
+  }
+
+  @include smMobile {
+    padding: 25px;
+  }
+
+  .custom-style {
+    background: transparent;
+    padding: 0;
+
+    .svgs-container {
+      padding: 50px;
+
+      @include Laptop {
+        padding: 0;
+      }
+    }
+  }
+
+  .ai-labeled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ai-labeled-data {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      @include Laptop {
+        flex-direction: column;
+        gap: 100px;
+      }
+
+      .ai-satelite-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 31px;
+
+        @include Laptop {
+          align-items: center;
+        }
+
+        h1 {
+          @include Laptop {
+            text-align: center;
+          }
+        }
+
+        p {
+          width: 90%;
+          color: #b6c4ca;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150.023%; /* 30.005px */
+
+          @include smMobile {
+            text-align: center;
+          }
+        }
+      }
+
+      .image-container {
+        flex: 1;
+        width: 720px;
+        height: 720px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include xLgTablet {
+          height: 100%;
+          width: 100%;
+        }
+
+        .image {
+          width: 90%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .custom-link {
+      padding-top: 100px;
+    }
+  }
+
+  .reach-us {
+    height: 447px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(26, 45, 71, 0.7);
+    border-radius: 25px;
+    padding: 70px;
+    gap: 16px;
+
+    @include Laptop {
+      padding: 35px;
+    }
+
+    @include smMobile {
+      padding: 25px;
+    }
+
+    .custom-btn {
+      padding: 20px 85px;
+    }
+
+    p {
+      max-width: 746px;
+      color: #9ba2b2;
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px; /* 160% */
+      letter-spacing: -0.14px;
+    }
+  }
+}

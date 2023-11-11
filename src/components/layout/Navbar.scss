@@ -8,6 +8,7 @@
   align-items: center;
   z-index: 20;
   top: 0;
+  transition: all 0.3s ease-in-out;
   // transition: all 0.3s ease-in-out;
 
   .navbar_gradient {
@@ -169,7 +170,8 @@
 }
 
 .scrolled {
-  background-color: $dark600;
+  height: 80px;
+  background-color: $dark800;
   transition: all 0.3s ease-in-out;
 
   @include mobile {

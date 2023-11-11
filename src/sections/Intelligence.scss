@@ -1,0 +1,96 @@
+@import '../globals.scss';
+
+.intelligence {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: rgba(26, 45, 71, 0.3);
+  background-image: url('../images/plus.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @include Laptop {
+    margin-top: 0;
+  }
+
+  @include smMobile {
+    padding: 25px;
+  }
+
+  .intelligence-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    @include Laptop {
+      flex-direction: column-reverse;
+      gap: 100px;
+    }
+
+    .image-container {
+      position: relative;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include Laptop {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      .image {
+        position: absolute;
+        top: -10%;
+        width: 100%;
+
+        @include Laptop {
+          position: relative;
+        }
+      }
+    }
+
+    .intelligence-content {
+      flex: 1;
+      min-height: 820px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      @include Laptop {
+        min-height: 100%;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: right;
+        margin-top: 20px;
+
+        @include Laptop {
+          text-align: center;
+        }
+      }
+
+      p {
+        color: #b6c4ca;
+        text-align: right;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150.023%;
+        padding-top: 50px;
+
+        @include Laptop {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .intelligence-link {
+    padding-top: 35px;
+  }
+}

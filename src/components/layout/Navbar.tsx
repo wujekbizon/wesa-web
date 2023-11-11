@@ -51,7 +51,7 @@ const Navbar = () => {
       whileInView="show"
       className={`header ${scrolled ? 'scrolled' : ''}  ${scrolledFar ? 'scrolled-far' : ''} `}
     >
-      <div className="navbar_gradient gradient_01" />
+      <div className=" gradient_01" />
       <nav className="navbar">
         <Logo className="custom-logo" />
         <ul className="links">

@@ -12,6 +12,7 @@ import AISolutions from './AISolutions'
 import Geospatial from './Geospatial'
 import Detection from './Detection'
 import Analyze from './Analyze'
+import Intelligence from './Intelligence'
 
 export {
   Hero,
@@ -28,4 +29,5 @@ export {
   Geospatial,
   Detection,
   Analyze,
+  Intelligence,
 }

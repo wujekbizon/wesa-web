@@ -1,5 +1,5 @@
 import './AISolutions.scss'
-import { Geospatial, Detection, Analyze } from '.'
+import { Geospatial, Detection, Analyze, Intelligence } from '.'
 
 const AISolutions = () => {
   return (
@@ -8,6 +8,7 @@ const AISolutions = () => {
       <div className="rectangle" />
       <Detection />
       <Analyze />
+      <Intelligence />
     </section>
   )
 }

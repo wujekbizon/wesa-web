@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 .project-scope {
   max-width: 1144px;
   margin-right: auto;
@@ -13,6 +15,12 @@
     align-items: center;
     gap: 20px;
     margin-top: 25px;
+
+    h1 {
+      @include mobile {
+        text-align: center;
+      }
+    }
   }
 
   .scope-container {

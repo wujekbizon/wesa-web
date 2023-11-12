@@ -1,5 +1,5 @@
 import './Developers.scss'
-
+import { projectsScope } from '../data/scope'
 // components
 import { WebSolution, Developement, Technologies, ProjectScope } from '../sections'
 
@@ -9,7 +9,13 @@ const Developers = () => {
       <WebSolution />
       <Developement />
       <Technologies />
-      <ProjectScope />
+      <ProjectScope
+        projectsScope={projectsScope}
+        title="Project Scope"
+        titleBtn="Build A Success-Driven Development Team"
+        exploreLink="DISCUSS MY WEB APP DEVELOPMENT PROJECT"
+        linkUrl="/developers/projects"
+      />
     </section>
   )
 }

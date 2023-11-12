@@ -1,19 +1,34 @@
-import './PorjectScope.scss'
+import './ProjectScope.scss'
 import { ScopeItem, Line } from '../components'
-import { projectScope } from '../data/scope'
 
 // components
 import { Title, TitleButton, ExploreLink } from '../components'
 
-const ProjectScope = () => {
+interface ProjectScopeInterface {
+  projectsScope: { id: number; icon: JSX.Element; title: string; desc: string }[]
+  title: string
+  titleBtn: string
+  exploreLink: string
+  linkUrl: string
+  id?: string
+}
+
+const ProjectScope: React.FC<ProjectScopeInterface> = ({
+  projectsScope,
+  title,
+  titleBtn,
+  exploreLink,
+  linkUrl,
+  id,
+}) => {
   return (
-    <section className="project-scope">
+    <section className="project-scope" id={id}>
       <div className="project-title">
-        <TitleButton title="Build A Success-Driven Development Team" />
-        <Title title="Project Scope" />
+        <TitleButton title={titleBtn} />
+        <Title title={title} />
       </div>
 
-      {projectScope.map((item, index) => (
+      {projectsScope.map((item, index) => (
         <div
           className="scope-container"
           key={item.id}
@@ -26,7 +41,7 @@ const ProjectScope = () => {
         </div>
       ))}
 
-      <ExploreLink text="Discuss my web app development project" url="/solutions" />
+      <ExploreLink text={exploreLink} url={linkUrl} />
     </section>
   )
 }

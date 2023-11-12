@@ -1,3 +1,5 @@
+@import '../globals.scss';
+
 .geospatial {
   position: relative;
   height: 70vh;
@@ -11,6 +13,20 @@
   background-repeat: no-repeat;
   padding: 64px;
 
+  @include mobile {
+    padding: 50px;
+  }
+
+  @include smMobile {
+    padding: 25px;
+  }
+
+  h1 {
+    @include smMobile {
+      text-align: center;
+    }
+  }
+
   .geospatial-desc {
     color: #b6c4ca;
     text-align: center;
@@ -19,5 +35,11 @@
     font-weight: 500;
     line-height: normal;
     margin-top: 73px;
+  }
+
+  .custom-btn {
+    @include mobile {
+      bottom: 2rem;
+    }
   }
 }

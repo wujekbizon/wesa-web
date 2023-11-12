@@ -14,6 +14,8 @@ import Detection from './Detection'
 import Analyze from './Analyze'
 import Intelligence from './Intelligence'
 import Partners from './Partners'
+import CloudSolutions from './CloudSolutions'
+import CloudCostEffective from './CloudCostEffective'
 
 export {
   Hero,
@@ -32,4 +34,6 @@ export {
   Analyze,
   Intelligence,
   Partners,
+  CloudSolutions,
+  CloudCostEffective,
 }

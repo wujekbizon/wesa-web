@@ -10,7 +10,7 @@ const Geospatial = () => {
         The power to dynamically manage your ground assets and critical infrastructure.Remotely. At scale. Cost
         effectively.
       </p>
-      <ScrollButton tag="analyze" />
+      <ScrollButton tag="analyze" className="custom-btn" />
     </section>
   )
 }

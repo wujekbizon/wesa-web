@@ -16,6 +16,7 @@ import Bullet from './ui/Bullet'
 import Line from './ui/Line'
 import ServiceCard from './ui/ServiceCard'
 import ScopeItem from './ui/ScopeItem'
+import CloudForm from './ui/CloudForm'
 
 export {
   Logo,
@@ -36,4 +37,5 @@ export {
   Line,
   ServiceCard,
   ScopeItem,
+  CloudForm,
 }

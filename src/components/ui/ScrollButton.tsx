@@ -1,9 +1,9 @@
 import './ScrollButton.scss'
 import { motion } from 'framer-motion'
 
-const ScrollButton = ({ tag }: { tag: string }) => {
+const ScrollButton = ({ tag, className }: { tag: string; className?: string }) => {
   return (
-    <div className="scroll-container">
+    <div className={`${className} scroll-container`}>
       <a href={`#${tag}`}>
         <div className="btn_container">
           <motion.div

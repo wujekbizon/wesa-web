@@ -34,7 +34,7 @@ const Navbar = () => {
         setScrolled(false)
       }
 
-      if (scrollTop > 4600) {
+      if (scrollTop > 4200) {
         setScrolledFar(true)
       } else {
         setScrolledFar(false)

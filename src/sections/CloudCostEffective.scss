@@ -1,0 +1,65 @@
+@import '../globals.scss';
+
+.cloud-cost {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 64px 64px 64px;
+  gap: 40px;
+  margin-top: -50px;
+
+  @include mobile {
+    margin-top: 0;
+    padding: 40px;
+  }
+
+  @include smMobile {
+    padding: 25px;
+  }
+
+  @include lgTablet {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cloud-effective {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 100px;
+
+    h1 {
+      @include mobile {
+        text-align: center;
+        line-height: 65px;
+      }
+    }
+
+    @include mobile {
+      align-items: center;
+      margin-top: 0;
+    }
+
+    p {
+      color: #b6c4ca;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 152.023%; /* 30.405px */
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+  }
+
+  .cloud-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

@@ -10,42 +10,38 @@ export const sliderItems = [
     id: 1,
     img: Earth,
     title: '3D Networking',
-    content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+    content: 'Transforming traditional networking into an immersive and interactive experience.',
   },
   {
     id: 2,
     img: Ai,
     title: 'Train AI Models',
     content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+      'Empowering businesses to harness the full potential of AI by offering comprehensive training for advanced machine learning models.',
   },
   {
     id: 3,
     img: CryptoImg,
-    title: 'Crypto',
-    content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+    title: 'Cryptocurrency',
+    content: 'Revolutionizing the financial landscape with secure and decentralized digital currency solutions.',
   },
   {
     id: 4,
     img: Blocks,
-    title: 'Title4',
-    content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+    title: 'Product Solutions',
+    content: 'Providing tailored and innovative solutions to address the specific needs of diverse industries.',
   },
   {
     id: 5,
     img: Hueify,
-    title: 'Title5',
-    content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+    title: 'Hueify AI Color Generator',
+    content: 'Get a Hue-tiful palette every time with Huefiy!',
   },
   {
     id: 6,
     img: Arch3d,
-    title: 'Title6',
+    title: 'Cloud Architecture',
     content:
-      'GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.',
+      'Building scalable and efficient cloud infrastructures to optimize performance and enable seamless business operations.',
   },
 ]

@@ -42,6 +42,7 @@
     .mobile-title {
       display: none;
       @include smMobile {
+        font-size: 65px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,6 +65,7 @@
       }
 
       p {
+        width: 90%;
         max-width: 920px;
         text-align: center;
         color: white;

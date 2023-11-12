@@ -1,5 +1,6 @@
 import './HomeLayout.scss'
 import { Outlet } from 'react-router-dom'
+import ScrollToTop from '../components/layout/ScrollToTop'
 
 // components
 import { Navbar, Footer } from '../components'
@@ -10,6 +11,7 @@ const HomeLayout = () => {
       <Navbar />
       <Outlet />
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }

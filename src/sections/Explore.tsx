@@ -6,7 +6,6 @@ import { svgFiles } from '../data/svgElements'
 const Explore = () => {
   return (
     <section className="explore" id="explore">
-      <div className="rectangle" />
       <Carousel />
       <Clients svgsArr={svgFiles} title="Our Clients" titleBtnText="Trusted by the industry leaders" />
     </section>

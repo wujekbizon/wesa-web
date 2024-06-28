@@ -64,7 +64,7 @@ const Hero = () => {
           </motion.div>
         </div>
       </motion.div>
-      {/* <ScrollButton tag="explore" /> */}
+      <ScrollButton tag="explore" />
     </motion.section>
   )
 }

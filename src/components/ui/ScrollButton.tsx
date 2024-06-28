@@ -8,10 +8,10 @@ const ScrollButton = ({ tag, className }: { tag: string; className?: string }) =
         <div className="btn_container">
           <motion.div
             animate={{
-              y: [0, 36, 0],
+              y: [0, 30, 0],
             }}
             transition={{
-              duration: 1.5,
+              duration: 2.5,
               repeat: Infinity,
               repeatType: 'loop',
             }}

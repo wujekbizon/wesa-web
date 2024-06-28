@@ -2,19 +2,18 @@ import './Navbar.scss'
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { navVariants } from '../../utils/motion'
+import { zoomIn } from '../../utils/motion'
 
 import { links } from '../../data/links'
 import MenuSvg from '../../images/menu.svg'
 import CloseSvg from '../../images/close.svg'
+import Logo from '../ui/Logo'
 
 // components
-import { Logo } from '..'
 
 const Navbar = () => {
   const location = useLocation()
   const [scrolled, setScrolled] = useState(false)
-  const [scrolledFar, setScrolledFar] = useState(false)
   const [toggle, setToggle] = useState(false)
 
   const mobileLinks = [{ label: 'Home', url: '/' }, ...links]
@@ -23,21 +22,15 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       if (
-        (location.pathname == '/solutions' ||
+        ((location.pathname == '/solutions' ||
           location.pathname == '/developers' ||
           location.pathname == '/customers') &&
-        scrollTop > 10 &&
-        scrollTop < 4650
+          scrollTop > 10) ||
+        (location.pathname == '/' && scrollTop > 3850)
       ) {
         setScrolled(true)
       } else {
         setScrolled(false)
-      }
-
-      if (scrollTop > 4200) {
-        setScrolledFar(true)
-      } else {
-        setScrolledFar(false)
       }
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -46,14 +39,15 @@ const Navbar = () => {
 
   return (
     <motion.header
-      variants={navVariants}
+      variants={zoomIn(0.1, 0.6)}
       initial="hidden"
       whileInView="show"
-      className={`header ${scrolled ? 'scrolled' : ''}  ${scrolledFar ? 'scrolled-far' : ''} `}
+      className={`header  ${scrolled ? 'scrolled' : ''} `}
     >
-      <div className=" gradient_01" />
+      {/* <div className="gradient_01" /> */}
       <nav className="navbar">
-        <Logo className="custom-logo" />
+        <Logo />
+
         <ul className="links">
           {links.map(({ label, url }) => (
             <NavLink
@@ -65,10 +59,6 @@ const Navbar = () => {
             </NavLink>
           ))}
         </ul>
-
-        <div className="blog-btn">
-          <button>The Quill's Vault</button>
-        </div>
 
         <div className="menu">
           <img src={toggle ? CloseSvg : MenuSvg} alt="menu" onClick={() => setToggle(!toggle)} />

@@ -7,8 +7,8 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 300,
-      damping: 140
-    }
+      damping: 140,
+    },
   },
   show: {
     opacity: 1,
@@ -16,9 +16,9 @@ export const navVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 0.4
-    }
-  }
+      delay: 0.1,
+    },
+  },
 }
 
 export const staggerContainer = {
@@ -26,15 +26,15 @@ export const staggerContainer = {
   show: {
     transition: {
       staggerChildren: 0.5,
-      delayChildren: 0.5
-    }
-  }
+      delayChildren: 0.5,
+    },
+  },
 } as Variants
 
 export const textTitleVariant = (delay: number) => ({
   hidden: {
     y: 50,
-    opacity: 0
+    opacity: 0,
   },
   show: {
     y: 0,
@@ -42,51 +42,51 @@ export const textTitleVariant = (delay: number) => ({
     transition: {
       type: 'spring',
       duration: 1.25,
-      delay
-    }
-  }
+      delay,
+    },
+  },
 })
 
 export const textContainer = {
   hidden: {
-    opacity: 0
+    opacity: 0,
   },
   show: (i = 1) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 }
-  })
+    transition: { staggerChildren: 0.1, delayChildren: i * 0.1 },
+  }),
 }
 
 export const titleTextContainer = {
   hidden: {
-    opacity: 0
+    opacity: 0,
   },
   show: (i = 0.5) => ({
     opacity: 1,
-    transition: { staggerChildren: 0.08, delayChildren: i * 0.08 }
-  })
+    transition: { staggerChildren: 0.08, delayChildren: i * 0.08 },
+  }),
 }
 
 export const textVariant = {
   hidden: {
     opacity: 0,
-    y: 20
+    y: 20,
   },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       type: 'tween',
-      ease: 'easeIn'
-    }
-  }
+      ease: 'easeIn',
+    },
+  },
 }
 
 export const fadeIn = (direction: string, type: string, delay: number, duration: number) => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
-    opacity: 0
+    opacity: 0,
   },
   show: {
     x: 0,
@@ -96,15 +96,15 @@ export const fadeIn = (direction: string, type: string, delay: number, duration:
       type,
       delay,
       duration,
-      ease: 'easeOut'
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 })
 
 export const zoomIn = (delay: number, duration: number) => ({
   hidden: {
     scale: 0,
-    opacity: 0
+    opacity: 0,
   },
   show: {
     scale: 1,
@@ -113,15 +113,15 @@ export const zoomIn = (delay: number, duration: number) => ({
       type: 'tween',
       delay,
       duration,
-      ease: 'easeOut'
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 })
 
 export const slideIn = (direction: string, type: string, delay: number, duration: number) => ({
   hidden: {
     x: direction === 'left' ? '-150%' : direction === 'right' ? '100%' : 0,
-    y: direction === 'up' ? '-100%' : direction === 'down' ? '100%' : 0
+    y: direction === 'up' ? '-100%' : direction === 'down' ? '100%' : 0,
   },
   show: {
     x: 0,
@@ -130,15 +130,15 @@ export const slideIn = (direction: string, type: string, delay: number, duration
       type,
       delay,
       duration,
-      ease: 'easeOut'
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 })
 
 export const titleVariants = (direction: string, rotate = 0) => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
-    rotate: 120
+    rotate: 120,
   },
   show: {
     x: 0,
@@ -146,9 +146,9 @@ export const titleVariants = (direction: string, rotate = 0) => ({
     transition: {
       type: 'spring',
       duration: 1.8,
-      delay: 0.5
-    }
-  }
+      delay: 0.5,
+    },
+  },
 })
 
 export const footerVariants = {
@@ -158,8 +158,8 @@ export const footerVariants = {
     transition: {
       type: 'spring',
       stiffness: 300,
-      damping: 140
-    }
+      damping: 140,
+    },
   },
   show: {
     opacity: 1,
@@ -167,16 +167,16 @@ export const footerVariants = {
     transition: {
       type: 'spring',
       stiffness: 80,
-      delay: 0.5
-    }
-  }
+      delay: 0.5,
+    },
+  },
 }
 
 export const text2Variant = (delay: number) => {
   return {
     hidden: {
       y: -50,
-      opacity: 0
+      opacity: 0,
     },
     show: {
       y: 0,
@@ -184,8 +184,8 @@ export const text2Variant = (delay: number) => {
       transition: {
         type: 'spring',
         duration: 1.25,
-        delay: delay
-      }
-    }
+        delay: delay,
+      },
+    },
   }
 }
